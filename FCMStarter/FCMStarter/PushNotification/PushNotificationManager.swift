@@ -45,12 +45,16 @@ class PushNotificationManager: NSObject {
 
 extension PushNotificationManager: UNUserNotificationCenterDelegate {
     
+    // 알림 터치하고 나서
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        logger(response)
+        NotificationCenter.default.post(name: .receive, object: nil, userInfo: ["notification" : response.notification])
     }
     
+    // 앱 실행 중에 알림 오면
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         logger(notification.request.content.userInfo)
+        
+        NotificationCenter.default.post(name: .receive, object: nil, userInfo: ["notification" : notification])
         
         
     }

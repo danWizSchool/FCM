@@ -24,19 +24,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uf-YD-zwe">
-                                <rect key="frame" x="50" y="216" width="226" height="36"/>
+                                <rect key="frame" x="50" y="216" width="194" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Client에서 message 보내기"/>
+                                <state key="normal" title="ipad 12.9로 알림 보내기"/>
                                 <connections>
                                     <action selector="tapSendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d8b-2g-fxi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vog-w7-7zo">
-                                <rect key="frame" x="50" y="150" width="86" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4A-sn-ZSO">
+                                <rect key="frame" x="50" y="280" width="204" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="fcm token"/>
+                                <state key="normal" title="내 아이패드로 알림 보내기"/>
                                 <connections>
-                                    <action selector="tapFCMToken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXs-Tz-YgN"/>
+                                    <action selector="tapSendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B95-W1-nzP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qj2-P3-kMJ">
+                                <rect key="frame" x="50" y="336" width="204" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="내 아이폰으로 알림 보내기"/>
+                                <connections>
+                                    <action selector="tapSendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lyO-3B-O7v"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yem-Yc-Dhl">
@@ -47,9 +55,19 @@
                                     <action selector="tapWizDefaultToken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="he4-gZ-yqT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vog-w7-7zo">
+                                <rect key="frame" x="50" y="150" width="86" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="fcm token"/>
+                                <connections>
+                                    <action selector="tapFCMToken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXs-Tz-YgN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="S4A-sn-ZSO" firstAttribute="top" secondItem="3uf-YD-zwe" secondAttribute="bottom" constant="28" id="2mQ-2J-ZGY"/>
+                            <constraint firstItem="qj2-P3-kMJ" firstAttribute="leading" secondItem="3uf-YD-zwe" secondAttribute="leading" id="4SU-dD-5j9"/>
                             <constraint firstItem="vog-w7-7zo" firstAttribute="top" secondItem="Uu6-SG-ieI" secondAttribute="bottom" constant="20" id="9lU-DQ-sc6"/>
                             <constraint firstItem="3uf-YD-zwe" firstAttribute="leading" secondItem="vog-w7-7zo" secondAttribute="leading" id="AYj-F8-IoR"/>
                             <constraint firstItem="3uf-YD-zwe" firstAttribute="top" secondItem="vog-w7-7zo" secondAttribute="bottom" constant="30" id="Ank-FF-8SJ"/>
@@ -57,15 +75,22 @@
                             <constraint firstItem="vog-w7-7zo" firstAttribute="leading" secondItem="Uu6-SG-ieI" secondAttribute="leading" id="NrZ-D8-mdc"/>
                             <constraint firstItem="Uu6-SG-ieI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="h5q-cA-jvp"/>
                             <constraint firstItem="yem-Yc-Dhl" firstAttribute="centerY" secondItem="vog-w7-7zo" secondAttribute="centerY" id="olo-iD-9gp"/>
+                            <constraint firstItem="S4A-sn-ZSO" firstAttribute="leading" secondItem="3uf-YD-zwe" secondAttribute="leading" id="r5W-GG-bh2"/>
+                            <constraint firstItem="qj2-P3-kMJ" firstAttribute="top" secondItem="S4A-sn-ZSO" secondAttribute="bottom" constant="20" id="rMY-HB-CIx"/>
                             <constraint firstItem="yem-Yc-Dhl" firstAttribute="leading" secondItem="vog-w7-7zo" secondAttribute="trailing" constant="20" id="vOc-K8-Shm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3uf-YD-zwe" secondAttribute="trailing" symbolic="YES" id="yhP-xf-3Hz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mayPad" destination="S4A-sn-ZSO" id="sFF-Ki-BRz"/>
+                        <outlet property="myPhone" destination="qj2-P3-kMJ" id="5uq-iy-kGE"/>
+                        <outlet property="pad" destination="3uf-YD-zwe" id="R8R-m0-6Cm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9" y="84"/>
+            <point key="canvasLocation" x="-404" y="88"/>
         </scene>
     </scenes>
 </document>

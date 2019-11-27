@@ -19,6 +19,7 @@
 		37B5D22E238E4F2A00316587 /* WizDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B5D22D238E4F2A00316587 /* WizDefault.swift */; };
 		37B5D233238E5E2A00316587 /* AlertExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B5D232238E5E2A00316587 /* AlertExtensions.swift */; };
 		37B5D235238E5F1C00316587 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B5D234238E5F1C00316587 /* UIViewControllerExtension.swift */; };
+		37B5D237238E6CD600316587 /* FCMNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B5D236238E6CD600316587 /* FCMNotificationName.swift */; };
 		DC1E5E5F0FFB14AB5A6E2908 /* Pods_FCMStarter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C03EED8671303B7A45FAEB /* Pods_FCMStarter.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		37B5D22D238E4F2A00316587 /* WizDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizDefault.swift; sourceTree = "<group>"; };
 		37B5D232238E5E2A00316587 /* AlertExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertExtensions.swift; sourceTree = "<group>"; };
 		37B5D234238E5F1C00316587 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		37B5D236238E6CD600316587 /* FCMNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCMNotificationName.swift; sourceTree = "<group>"; };
 		59C03EED8671303B7A45FAEB /* Pods_FCMStarter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCMStarter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C465A1C9ACB184981E8A668D /* Pods-FCMStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCMStarter.release.xcconfig"; path = "Target Support Files/Pods-FCMStarter/Pods-FCMStarter.release.xcconfig"; sourceTree = "<group>"; };
 		EEECDBF2132DFCC578ED8104 /* Pods-FCMStarter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCMStarter.debug.xcconfig"; path = "Target Support Files/Pods-FCMStarter/Pods-FCMStarter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				37B5D232238E5E2A00316587 /* AlertExtensions.swift */,
+				37B5D236238E6CD600316587 /* FCMNotificationName.swift */,
 				374CF1CE238CBA9C009CE980 /* Logger.swift */,
 				37B5D22D238E4F2A00316587 /* WizDefault.swift */,
 				37B5D234238E5F1C00316587 /* UIViewControllerExtension.swift */,
@@ -256,6 +259,7 @@
 				374CF1CF238CBA9C009CE980 /* Logger.swift in Sources */,
 				378887A1238BCB010065A789 /* ViewController.swift in Sources */,
 				3788879D238BCB010065A789 /* AppDelegate.swift in Sources */,
+				37B5D237238E6CD600316587 /* FCMNotificationName.swift in Sources */,
 				374CF1D1238E3F5D009CE980 /* PushNotificationSender.swift in Sources */,
 				3788879F238BCB010065A789 /* SceneDelegate.swift in Sources */,
 				37B5D22E238E4F2A00316587 /* WizDefault.swift in Sources */,

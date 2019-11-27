@@ -10,6 +10,7 @@ import UIKit
 
 // ipad d8QYsQeiO5Q:APA91bG4uCV67DaST3XRxUjyyfhSQl8al5FuY9thhOTBcqOSRZifSx3uYzXvkJNPIN2Rj_oCuk-bohbNsgf5Hg1Oy0QahC-pTSRttmFVdLuKdP8MtYa_dOEqkS_TLv-6lRZGxXljDP1D
 // iphone ed3BnsS9zao:APA91bEYm-utkMkCi1K_gka3byPw4kx-lx0EzftQcocDs-HkQQ3yAdT18B4DOa-UfXuzrNsrlo9dtbo_MPmgIdu5fxdYGS_hZ9ZQYnEmHtp08aVSPrg4En8gKRR0NwApvGHsB-RsJ15c
+// ipad_sik d9H7GI0THy8:APA91bF7QZOeuEm7tksl9oVvtsPZ3iQTPirb4ruh5sCfE6Wjd9UAIfTJWknBLNWXA6m-TKOBD-lTA5SO0KCRRuHVvJkPYnlPZqy4Vqz4ZP3JurfVu9o6_G3StB_VKf3AugY_7_eDn7hz
 
 class PushNotificationSender {
     func sendPushNotification(to token: String, title: String, body: String) {
@@ -17,7 +18,8 @@ class PushNotificationSender {
         let url = NSURL(string: urlString)!
         let paramString: [String : Any] = ["to" : token,
                                            "notification" : ["title" : title, "body" : body],
-                                           "data" : ["user" : "test_id"]
+                                           "bedge" : 1,
+                                           "data" : ["customData" : UIDevice.current.name]
         ]
         let request = NSMutableURLRequest(url: url as URL)
         request.httpMethod = "POST"
