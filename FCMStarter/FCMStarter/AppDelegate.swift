@@ -18,12 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-//        let pushManager = PushNotificationManager(userID: "currently_logged_in_user_id")
-//           pushManager.registerForPushNotifications()
+        let pushManager = PushNotificationManager(userID: "dan")
+        pushManager.vc = 
+           pushManager.registerForPushNotifications()
         
         FirebaseApp.configure()
-        Messaging.messaging().delegate = self
+        Messaging.messaging().delegate = pushManager
         
+        /*
         if #available(iOS 10.0, *) {
           // For iOS 10 display notification (sent via APNS)
           center.delegate = self
@@ -41,6 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         application.registerForRemoteNotifications()
         
+        */
+        
         logger("User Language for localizing :", NSLocale.preferredLanguages)
         
         return true
@@ -55,7 +59,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // APNs에서 device token 발급 성공
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         logger("APNs token retrieved: \(deviceToken)")
-
       // With swizzling disabled you must set the APNs token here.
       // Messaging.messaging().apnsToken = deviceToken
     }
@@ -100,6 +103,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+/*
+
 // [START ios_10_message_handling]
 @available(iOS 10, *)
 extension AppDelegate : UNUserNotificationCenterDelegate {
@@ -141,6 +146,7 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
 }
 // [END ios_10_message_handling]
 
+
 extension AppDelegate : MessagingDelegate {
   // [START refresh_token]
   func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
@@ -162,3 +168,4 @@ extension AppDelegate : MessagingDelegate {
 }
 
 
+*/

@@ -16,25 +16,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uu6-SG-ieI">
-                                <rect key="frame" x="168" y="435" width="78" height="36"/>
+                                <rect key="frame" x="50" y="94" width="78" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="auth 체크"/>
                                 <connections>
                                     <action selector="tapAuth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnu-0l-YA5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uf-YD-zwe">
+                                <rect key="frame" x="50" y="216" width="226" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Client에서 message 보내기"/>
+                                <connections>
+                                    <action selector="tapSendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d8b-2g-fxi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vog-w7-7zo">
+                                <rect key="frame" x="50" y="150" width="86" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="fcm token"/>
+                                <connections>
+                                    <action selector="tapFCMToken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXs-Tz-YgN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yem-Yc-Dhl">
+                                <rect key="frame" x="156" y="150" width="149" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="WizDefault token"/>
+                                <connections>
+                                    <action selector="tapWizDefaultToken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="he4-gZ-yqT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Uu6-SG-ieI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OkH-WV-IAP"/>
-                            <constraint firstItem="Uu6-SG-ieI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="QUx-1i-sKE"/>
+                            <constraint firstItem="vog-w7-7zo" firstAttribute="top" secondItem="Uu6-SG-ieI" secondAttribute="bottom" constant="20" id="9lU-DQ-sc6"/>
+                            <constraint firstItem="3uf-YD-zwe" firstAttribute="leading" secondItem="vog-w7-7zo" secondAttribute="leading" id="AYj-F8-IoR"/>
+                            <constraint firstItem="3uf-YD-zwe" firstAttribute="top" secondItem="vog-w7-7zo" secondAttribute="bottom" constant="30" id="Ank-FF-8SJ"/>
+                            <constraint firstItem="Uu6-SG-ieI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="MQQ-0k-e7n"/>
+                            <constraint firstItem="vog-w7-7zo" firstAttribute="leading" secondItem="Uu6-SG-ieI" secondAttribute="leading" id="NrZ-D8-mdc"/>
+                            <constraint firstItem="Uu6-SG-ieI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="h5q-cA-jvp"/>
+                            <constraint firstItem="yem-Yc-Dhl" firstAttribute="centerY" secondItem="vog-w7-7zo" secondAttribute="centerY" id="olo-iD-9gp"/>
+                            <constraint firstItem="yem-Yc-Dhl" firstAttribute="leading" secondItem="vog-w7-7zo" secondAttribute="trailing" constant="20" id="vOc-K8-Shm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3uf-YD-zwe" secondAttribute="trailing" symbolic="YES" id="yhP-xf-3Hz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="-9" y="84"/>
         </scene>
     </scenes>
 </document>

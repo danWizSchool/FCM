@@ -1,19 +1,17 @@
 //
-//  File.swift
+//  PushNotificationManager.swift
 //  FCMStarter
 //
-//  Created by wiz_Dan on 25/11/2019.
+//  Created by wiz_Dan on 27/11/2019.
 //  Copyright © 2019 wiz_Dan. All rights reserved.
 //
 
-import UIKit
 import Firebase
-import FirebaseFirestore
-import FirebaseMessaging
+import UIKit
 import UserNotifications
 
-
-class PushNotificationManager: NSObject, MessagingDelegate, UNUserNotificationCenterDelegate {
+class PushNotificationManager: NSObject {
+    var vc: UIViewController?
     let userID: String
     init(userID: String) {
         self.userID = userID
@@ -28,14 +26,14 @@ class PushNotificationManager: NSObject, MessagingDelegate, UNUserNotificationCe
                 options: authOptions,
                 completionHandler: {_, _ in })
             // For iOS 10 data message (sent via FCM)
-            Messaging.messaging().delegate = self
+            //Messaging.messaging().delegate = self
         } else {
             let settings: UIUserNotificationSettings =
                 UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
             UIApplication.shared.registerUserNotificationSettings(settings)
         }
         UIApplication.shared.registerForRemoteNotifications()
-        updateFirestorePushTokenIfNeeded()
+//        updateFirestorePushTokenIfNeeded()
     }
     func updateFirestorePushTokenIfNeeded() {
         if let token = Messaging.messaging().fcmToken {
@@ -43,16 +41,30 @@ class PushNotificationManager: NSObject, MessagingDelegate, UNUserNotificationCe
             usersRef.setData(["fcmToken": token], merge: true)
         }
     }
-    func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
-        print(remoteMessage.appData)
-    }
-    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
-        updateFirestorePushTokenIfNeeded()
-    }
+}
+
+extension PushNotificationManager: UNUserNotificationCenterDelegate {
+    
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        print(response)
+        logger(response)
     }
     
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        logger(notification.request.content.userInfo)
+        
+        
+    }
+    
+}
 
-
+extension PushNotificationManager: MessagingDelegate {
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        logger(fcmToken)
+        WizDefault.shared.fcmToken = fcmToken
+    }
+    
+    func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
+        logger(remoteMessage.appData)
+    }
+    
 }

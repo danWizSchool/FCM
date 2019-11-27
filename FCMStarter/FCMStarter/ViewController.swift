@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Alamofire
+import Firebase
 
 class ViewController: UIViewController {
     
     let center = UNUserNotificationCenter.current()
+    let notiSender = PushNotificationSender()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +43,16 @@ class ViewController: UIViewController {
             logger("alert setting :", setting.alertSetting.rawValue)
         }
     }
+    @IBAction func tapSendMessage(_ sender: Any) {
+        guard let fcmToken = WizDefault.shared.fcmToken else { return }
+        notiSender.sendPushNotification(to: fcmToken, title: "test title", body: "test body")
+    }
     
+    @IBAction func tapFCMToken(_ sender: Any) {
+        logger(Messaging.messaging().fcmToken, "ss")
+    }
+    @IBAction func tapWizDefaultToken(_ sender: Any) {
+        logger(WizDefault.shared.fcmToken)
+    }
 }
 

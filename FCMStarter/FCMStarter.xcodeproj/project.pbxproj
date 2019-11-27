@@ -8,30 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		374CF1CF238CBA9C009CE980 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374CF1CE238CBA9C009CE980 /* Logger.swift */; };
+		374CF1D1238E3F5D009CE980 /* PushNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374CF1D0238E3F5D009CE980 /* PushNotificationSender.swift */; };
+		374CF1D3238E40D0009CE980 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374CF1D2238E40D0009CE980 /* PushNotificationManager.swift */; };
 		3788879D238BCB010065A789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788879C238BCB010065A789 /* AppDelegate.swift */; };
 		3788879F238BCB010065A789 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788879E238BCB010065A789 /* SceneDelegate.swift */; };
 		378887A1238BCB010065A789 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378887A0238BCB010065A789 /* ViewController.swift */; };
 		378887A4238BCB010065A789 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378887A2238BCB010065A789 /* Main.storyboard */; };
 		378887A6238BCB020065A789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378887A5238BCB020065A789 /* Assets.xcassets */; };
-		378887A9238BCB020065A789 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378887A7238BCB020065A789 /* LaunchScreen.storyboard */; };
-		378887B4238BCD6E0065A789 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378887B3238BCD6E0065A789 /* PushNotificationManager.swift */; };
 		378887B6238BD3BE0065A789 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 378887B5238BD3BE0065A789 /* GoogleService-Info.plist */; };
+		37B5D22E238E4F2A00316587 /* WizDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B5D22D238E4F2A00316587 /* WizDefault.swift */; };
+		37B5D233238E5E2A00316587 /* AlertExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B5D232238E5E2A00316587 /* AlertExtensions.swift */; };
+		37B5D235238E5F1C00316587 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B5D234238E5F1C00316587 /* UIViewControllerExtension.swift */; };
 		DC1E5E5F0FFB14AB5A6E2908 /* Pods_FCMStarter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C03EED8671303B7A45FAEB /* Pods_FCMStarter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		374CF1CE238CBA9C009CE980 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		374CF1D0238E3F5D009CE980 /* PushNotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSender.swift; sourceTree = "<group>"; };
+		374CF1D2238E40D0009CE980 /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 		37888799238BCB010065A789 /* FCMStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCMStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3788879C238BCB010065A789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3788879E238BCB010065A789 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		378887A0238BCB010065A789 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		378887A3238BCB010065A789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		378887A5238BCB020065A789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		378887A8238BCB020065A789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		378887AA238BCB020065A789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		378887B2238BCCD60065A789 /* FCMStarter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FCMStarter.entitlements; sourceTree = "<group>"; };
-		378887B3238BCD6E0065A789 /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 		378887B5238BD3BE0065A789 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		37B5D22D238E4F2A00316587 /* WizDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizDefault.swift; sourceTree = "<group>"; };
+		37B5D232238E5E2A00316587 /* AlertExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertExtensions.swift; sourceTree = "<group>"; };
+		37B5D234238E5F1C00316587 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		59C03EED8671303B7A45FAEB /* Pods_FCMStarter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCMStarter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C465A1C9ACB184981E8A668D /* Pods-FCMStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCMStarter.release.xcconfig"; path = "Target Support Files/Pods-FCMStarter/Pods-FCMStarter.release.xcconfig"; sourceTree = "<group>"; };
 		EEECDBF2132DFCC578ED8104 /* Pods-FCMStarter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCMStarter.debug.xcconfig"; path = "Target Support Files/Pods-FCMStarter/Pods-FCMStarter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -72,17 +78,44 @@
 			children = (
 				378887B2238BCCD60065A789 /* FCMStarter.entitlements */,
 				3788879C238BCB010065A789 /* AppDelegate.swift */,
-				3788879E238BCB010065A789 /* SceneDelegate.swift */,
 				378887A0238BCB010065A789 /* ViewController.swift */,
-				378887B3238BCD6E0065A789 /* PushNotificationManager.swift */,
-				374CF1CE238CBA9C009CE980 /* Logger.swift */,
 				378887A2238BCB010065A789 /* Main.storyboard */,
-				378887A5238BCB020065A789 /* Assets.xcassets */,
-				378887A7238BCB020065A789 /* LaunchScreen.storyboard */,
-				378887AA238BCB020065A789 /* Info.plist */,
+				37B5D231238E4FCF00316587 /* PushNotification */,
+				37B5D22F238E4FA100316587 /* Util */,
 				378887B5238BD3BE0065A789 /* GoogleService-Info.plist */,
+				37B5D230238E4FB600316587 /* SupportFIles */,
 			);
 			path = FCMStarter;
+			sourceTree = "<group>";
+		};
+		37B5D22F238E4FA100316587 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				37B5D232238E5E2A00316587 /* AlertExtensions.swift */,
+				374CF1CE238CBA9C009CE980 /* Logger.swift */,
+				37B5D22D238E4F2A00316587 /* WizDefault.swift */,
+				37B5D234238E5F1C00316587 /* UIViewControllerExtension.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		37B5D230238E4FB600316587 /* SupportFIles */ = {
+			isa = PBXGroup;
+			children = (
+				378887A5238BCB020065A789 /* Assets.xcassets */,
+				378887AA238BCB020065A789 /* Info.plist */,
+				3788879E238BCB010065A789 /* SceneDelegate.swift */,
+			);
+			path = SupportFIles;
+			sourceTree = "<group>";
+		};
+		37B5D231238E4FCF00316587 /* PushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				374CF1D2238E40D0009CE980 /* PushNotificationManager.swift */,
+				374CF1D0238E3F5D009CE980 /* PushNotificationSender.swift */,
+			);
+			path = PushNotification;
 			sourceTree = "<group>";
 		};
 		6296FB9AF4654EC18B4757BC /* Frameworks */ = {
@@ -162,7 +195,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378887A9238BCB020065A789 /* LaunchScreen.storyboard in Resources */,
 				378887B6238BD3BE0065A789 /* GoogleService-Info.plist in Resources */,
 				378887A6238BCB020065A789 /* Assets.xcassets in Resources */,
 				378887A4238BCB010065A789 /* Main.storyboard in Resources */,
@@ -218,11 +250,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B5D233238E5E2A00316587 /* AlertExtensions.swift in Sources */,
+				374CF1D3238E40D0009CE980 /* PushNotificationManager.swift in Sources */,
+				37B5D235238E5F1C00316587 /* UIViewControllerExtension.swift in Sources */,
 				374CF1CF238CBA9C009CE980 /* Logger.swift in Sources */,
 				378887A1238BCB010065A789 /* ViewController.swift in Sources */,
-				378887B4238BCD6E0065A789 /* PushNotificationManager.swift in Sources */,
 				3788879D238BCB010065A789 /* AppDelegate.swift in Sources */,
+				374CF1D1238E3F5D009CE980 /* PushNotificationSender.swift in Sources */,
 				3788879F238BCB010065A789 /* SceneDelegate.swift in Sources */,
+				37B5D22E238E4F2A00316587 /* WizDefault.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,14 +271,6 @@
 				378887A3238BCB010065A789 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		378887A7238BCB020065A789 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				378887A8238BCB020065A789 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -370,7 +398,7 @@
 				CODE_SIGN_ENTITLEMENTS = FCMStarter/FCMStarter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KH53J489YG;
-				INFOPLIST_FILE = FCMStarter/Info.plist;
+				INFOPLIST_FILE = FCMStarter/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +418,7 @@
 				CODE_SIGN_ENTITLEMENTS = FCMStarter/FCMStarter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KH53J489YG;
-				INFOPLIST_FILE = FCMStarter/Info.plist;
+				INFOPLIST_FILE = FCMStarter/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
